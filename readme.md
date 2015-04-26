@@ -1,15 +1,15 @@
 === WooCommerce Display Order Count ===
 
-Contributors: skyverge, beka.rice
-Tags: woocommerce, orders, order total
-[Donate link](https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal@skyverge.com&item_name=Donation+for+WooCommerce+Display+Order+Count)
-Requires at least: 3.8
-Tested up to: 4.2
-Requires WooCommerce at least: 2.1
-Tested WooCommerce up to: 2.3
-Stable Tag: 1.0.0
-License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+- Contributors: skyverge, beka.rice
+- Tags: woocommerce, orders, order total
+- [Donate link](https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal@skyverge.com&item_name=Donation+for+WooCommerce+Display+Order+Count)
+- Requires at least: 3.8
+- Tested up to: 4.2
+- Requires WooCommerce at least: 2.1
+- Tested WooCommerce up to: 2.3
+- Stable Tag: 1.0.0
+- License: GPLv3
+- License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Adds the [wc_order_count] shortcode to display the total number of orders placed on your site.
 
@@ -51,11 +51,13 @@ You can now use the [wc_order_count] shortcode anywhere shortcodes are accepted 
 == Frequently Asked Questions ==
 
 **Why does this show the shortcode text instead of the count?**
+
 Chances are you're using this in a text widget -- your site needs to have this included in the functions.php or custom plugin to do so.
 
 `add_filter('widget_text', 'do_shortcode');`
 
 **Do I have to include completed orders?**
+
 Nope, the `status` attribute can accept only the order statuses you'd like to include in your total.
 
 == Changelog ==
