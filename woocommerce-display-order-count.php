@@ -32,7 +32,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  *
  */
  
- 
 function display_woocommerce_order_count( $atts, $content = null ) {
 
 	$args = shortcode_atts( array(
@@ -45,7 +44,7 @@ function display_woocommerce_order_count( $atts, $content = null ) {
 	
 	$order_count = 0;
 	
-	foreach( $statuses as $status ) {
+	foreach ( $statuses as $status ) {
 		
 		$status = str_replace( $status, 'wc-' . $status, $status );
 	
