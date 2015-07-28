@@ -4,10 +4,10 @@
 - Tags: woocommerce, orders, order total
 - [Donate link](https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal@skyverge.com&item_name=Donation+for+WooCommerce+Display+Order+Count)
 - Requires at least: 3.8
-- Tested up to: 4.2
+- Tested up to: 4.3
 - Requires WooCommerce at least: 2.1
-- Tested WooCommerce up to: 2.3
-- Stable Tag: 1.0.0
+- Tested WooCommerce up to: 2.4
+- Stable Tag: 1.0.1
 - License: GPLv3
 - License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -61,6 +61,9 @@ Chances are you're using this in a text widget -- your site needs to have this i
 Nope, the `status` attribute can accept only the order statuses you'd like to include in your total.
 
 == Changelog ==
+
+**2015.07.27 - version 1.0.1**
+ - Misc: WooCommerce 2.4 compatible
 
 **2015.04.26 - version 1.0.0**
  - Initial Release

@@ -5,7 +5,7 @@
  * Description: Adds the [wc_order_count] shortcode to display the total number of orders placed on your site.
  * Author: SkyVerge
  * Author URI: http://www.skyverge.com/
- * Version: 1.0.0
+ * Version: 1.0.1
  *
  * Copyright: (c) 2015-2015 SkyVerge, Inc. (info@skyverge.com)
  *
