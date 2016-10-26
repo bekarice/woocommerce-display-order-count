@@ -59,8 +59,8 @@ function display_woocommerce_order_count( $atts, $content = null ) {
 	}
 
 	ob_start();
-    echo $order_count;
 
+	echo number_format( $order_count );
 
 	return ob_get_clean();
 }
