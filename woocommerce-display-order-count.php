@@ -7,6 +7,9 @@
  * Author URI: http://www.skyverge.com/
  * Version: 1.1.0
  *
+ * GitHub Plugin URI: bekarice/woocommerce-display-order-count
+ * GitHub Branch: master
+ *
  * Copyright: (c) 2015-2015 SkyVerge, Inc. (info@skyverge.com)
  *
  * License: GNU General Public License v3.0
