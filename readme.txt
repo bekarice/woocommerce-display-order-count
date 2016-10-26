@@ -1,4 +1,19 @@
-## WooCommerce Display Order Count
+=== WooCommerce Display Order Count ===
+
+- Contributors: skyverge, beka.rice
+- Tags: woocommerce, orders, order total
+- [Donate link](https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal@skyverge.com&item_name=Donation+for+WooCommerce+Display+Order+Count)
+- Requires at least: 4.0
+- Tested up to: 4.6.2
+- Requires WooCommerce at least: 2.2
+- Tested WooCommerce up to: 2.6
+- Stable Tag: 1.1.0
+- License: GPLv3
+- License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+Adds the [wc_order_count] shortcode to display the total number of orders placed on your site.
+
+== Description ==
 
 This plugin will display the total number of completed orders on your site wherever the [wc_order_count] shortcode is used. This is helpful for showing trust badges like, "13,124 orders already shipped!".
 
@@ -18,16 +33,22 @@ refunded
 failed
 ```
 
-Though custom statuses could be used as well.
-
 **There are no settings**. The plugin only adds the ability to use this shortcode.
 
-### Requirements
+= More Details =
+ - See the [product page](http://www.skyverge.com/product/woocommerce-display-order-count/) for full details.
+ - View more of SkyVerge's [free WooCommerce extensions](http://profiles.wordpress.org/skyverge/)
+ - View all [SkyVerge WooCommerce extensions](http://www.skyverge.com/shop/)
 
- - WordPress 4.0 or newer
- - WooCommerce 2.2 or newer
- 
-### Frequently Asked Questions
+== Installation ==
+
+1. Be sure you're running WooCommerce 2.1+ in your shop.
+2. Upload the entire `woocommerce-display-order-count` folder to the `/wp-content/plugins/` directory, or upload the .zip file with the plugin under **Plugins &gt; Add New &gt; Upload**
+3. Activate the plugin through the **Plugins** menu in WordPress
+
+You can now use the [wc_order_count] shortcode anywhere shortcodes are accepted in your content.
+
+== Frequently Asked Questions ==
 
 **Why does this show the shortcode text instead of the count?**
 
@@ -39,14 +60,7 @@ Chances are you're using this in a text widget -- your site needs to have this i
 
 Nope, the `status` attribute can accept only the order statuses you'd like to include in your total.
 
-### More Details 
-
- - See the [product page](http://www.skyverge.com/product/woocommerce-display-order-count/) for full details.
- - [Make a donation](https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal@skyverge.com&item_name=Donation+for+WooCommerce+Display+Order+Count) to help fund more free plugins.
- - View more of SkyVerge's [free WooCommerce extensions](http://profiles.wordpress.org/skyverge/)
- - View all [SkyVerge WooCommerce extensions](http://www.skyverge.com/shop/)
-
-### Changelog
+== Changelog ==
 
 **2016.10.26 - version 1.1.0**
  - Misc: format order counts using the WooCommerce thousands separator

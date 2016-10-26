@@ -5,7 +5,7 @@
  * Description: Adds the [wc_order_count] shortcode to display the total number of orders placed on your site.
  * Author: SkyVerge
  * Author URI: http://www.skyverge.com/
- * Version: 1.0.1
+ * Version: 1.1.0
  *
  * Copyright: (c) 2015-2015 SkyVerge, Inc. (info@skyverge.com)
  *
@@ -19,8 +19,10 @@
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  *
  */
- 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
+
+defined( 'ABSPATH' ) or exit;
+
 
 /**
  * Plugin Description
@@ -31,32 +33,32 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * Use [wc_order_count status="completed,pending"] to display the total for completed and processing orders
  *
  */
- 
+
 function display_woocommerce_order_count( $atts, $content = null ) {
 
 	$args = shortcode_atts( array(
 		'status' => 'completed',
-    ), $atts );
-	
-	$status_list = $args['status'];
-	
-	$statuses = array_map( 'trim', explode( ',', $status_list ) );
-	
+	), $atts );
+
+	$statuses    = array_map( 'trim', explode( ',', $args['status'] ) );
 	$order_count = 0;
-	
+
 	foreach ( $statuses as $status ) {
-		
-		$status = str_replace( $status, 'wc-' . $status, $status );
-	
-        $total_orders = wp_count_posts( 'shop_order' )->$status;
-        
-        $order_count += $total_orders;
-    }
+
+		// if we didn't get a wc- prefix, add one
+		if ( 0 !== strpos( $status, 'wc-' ) ) {
+			$status = str_replace( $status, 'wc-' . $status, $status );
+		}
+
+		$total_orders = wp_count_posts( 'shop_order' )->$status;
+
+		$order_count += $total_orders;
+	}
 
 	ob_start();
-	
     echo $order_count;
-    
-    return ob_get_clean();
+
+
+	return ob_get_clean();
 }
 add_shortcode( 'wc_order_count', 'display_woocommerce_order_count' );
