@@ -42,7 +42,7 @@ failed
 
 == Installation ==
 
-1. Be sure you're running WooCommerce 2.1+ in your shop.
+1. Be sure you're running WooCommerce 2.2+ in your shop.
 2. Upload the entire `woocommerce-display-order-count` folder to the `/wp-content/plugins/` directory, or upload the .zip file with the plugin under **Plugins &gt; Add New &gt; Upload**
 3. Activate the plugin through the **Plugins** menu in WordPress
 
@@ -54,7 +54,7 @@ You can now use the [wc_order_count] shortcode anywhere shortcodes are accepted 
 
 Chances are you're using this in a text widget -- your site needs to have this included in the functions.php or custom plugin to do so.
 
-`add_filter('widget_text', 'do_shortcode');`
+`add_filter( 'widget_text', 'do_shortcode' );`
 
 **Do I have to include completed orders?**
 
@@ -63,7 +63,7 @@ Nope, the `status` attribute can accept only the order statuses you'd like to in
 == Changelog ==
 
 **2016.10.26 - version 1.1.0**
- - Misc: format order counts using the WooCommerce thousands separator
+ - Misc: format order counts using a thousands separator
  - Add support for the [GitHub updater plugin](https://github.com/afragen/github-updater)
 
 **2015.07.27 - version 1.0.1**
