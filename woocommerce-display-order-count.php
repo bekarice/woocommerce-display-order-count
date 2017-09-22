@@ -50,12 +50,10 @@ function display_woocommerce_order_count( $atts, $content = null ) {
 
 		// if we didn't get a wc- prefix, add one
 		if ( 0 !== strpos( $status, 'wc-' ) ) {
-			$status = str_replace( $status, 'wc-' . $status, $status );
+			$status = 'wc-' . $status;
 		}
 
-		$total_orders = wp_count_posts( 'shop_order' )->$status;
-
-		$order_count += $total_orders;
+		$order_count += wp_count_posts( 'shop_order' )->$status;
 	}
 
 	ob_start();
